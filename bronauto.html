@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylebron.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  black;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background-color: rgba(83, 177, 214, 0.664); /* Полупрозрачный белый фон для основного контейнера */
+            border-radius: 10px; /* Скругление углов */
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .book-button {
+            background-color: #db68ab;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .book-button:hover {
+            background-color: #db68ab;
+        }
+        .car-list {
+            margin: 20px 0;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .car-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">  
+        <div class="container">  
+            <div class="header-top">  
+                <nav class="main-menu">  
+                    <ul>  
+                        <li><a  href="sait.html">Главная</a></li>
+                        <li><a  href="chupka.html">Стоимость услуг</a></li>
+                        <li><a  href="model.html">Наши автомобили</a></li>
+                        <li><a  href="otzivi.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>  
+                    </ul>  
+                </nav>  
+            </div>  
+        </header>
+<div class="container">
+    <form id="booking-form">
+        <h2>Заполните форму для бронирования</h2>
+        <div class="form-group">
+            <label for="fullName">ФИО</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="car">Выберите автомобиль</label>
+            <select id="car" name="car" required>
+                <option value="SMA Forto">SMA Forto</option>
+                <option value="Matiz">Matiz</option>
+                <option value="Hyundai H-1">Hyundai H-1</option>
+                <option value="Niva Travel">Niva Travel</option>
+                <option value="Toyota Grand Highlander">Toyota Grand Highlander</option>
+                <option value="Land Cruiser 200">Land Cruiser 200</option>
+            </select>
+        </div>
+    </div>
+    <div class="car-list">
+        <button type="submit" class="book-button" onclick="window.location.href='karta.html';">Забронировать</button>
+    </div>
+    </form>
+
+    <div class="car-list">
+        <h2>Доступные автомобили</h2>
+        <div class="car-item">SMA Forto</div>
+        <div class="car-item">Matiz</div>
+        <div class="car-item">Hyundai H-1</div>
+        <div class="car-item">Niva Travel</div>
+        <div class="car-item">Toyota Grand Highlander</div>
+        <div class="car-item">Land Cruiser 200</div>
+    </div>
+</div>
+</body>
+</html>
